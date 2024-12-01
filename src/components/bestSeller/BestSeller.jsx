@@ -16,9 +16,15 @@ function BestSeller() {
   const bestSellers = product.filter((item) => item.bestSeller === true);
 
   return (
-    <div className="mt-4 sm:ml-4 mb-10">
+    <div className="mt-4 sm:ml-4 mb-10 ">
       {/* Title Component */}
-      <Title text1="Best" text2="Sellers" />
+      <div>
+        <Title text1="Best" text2="Sellers" />
+        <p className="w-full text-center text-sm text-gray-500">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+          in.
+        </p>
+      </div>
 
       {/* Grid Layout for Best Seller Items */}
       <div className="grid grid-cols-2 gap-3 gap-y-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 mt-6">

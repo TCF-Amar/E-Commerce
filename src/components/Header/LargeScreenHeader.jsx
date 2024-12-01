@@ -35,7 +35,7 @@ function LargeScreenHeader() {
 
   return (
     <motion.div
-      className="h-[50px] top-0 left-0 w-full bg-gray-200 px-4 sm:flex items-center hidden justify-between"
+      className="h-[50px] top-0 left-0 w-full bg-gray-50 px-4 sm:flex items-center hidden justify-between border-b border-gray-300"
       initial="hidden"
       animate="visible"
     >

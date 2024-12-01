@@ -9,10 +9,10 @@ import Collection from "./pages/Collection";
 
 function App() {
   return (
-    <div className="w-full flex justify- flex-col  items-center px-4    h-screen overflow-hidden overflow-y-auto oswald ">
+    <div className="w-full flex justify- flex-col  items-center px-4 bg-gray-50   h-screen overflow-hidden overflow-y-auto  ">
       <Header />
 
-      <div className="mt-16 w-full mx-4 sm:w-[70%] ">
+      <div className="mt-16 w-full mx-4 sm:w-[80%] ">
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />

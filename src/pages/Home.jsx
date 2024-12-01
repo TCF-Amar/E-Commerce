@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../components/Hero/Hero";
 import LatestCollections from "../components/latestcollections/LatestCollections";
 import BestSeller from "../components/bestSeller/BestSeller";
+import Services from "../components/Services";
 
 function Home() {
   return (
@@ -17,6 +18,8 @@ function Home() {
 
       {/* Best Seller Section */}
       <BestSeller />
+
+      <Services />
     </div>
   );
 }

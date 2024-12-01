@@ -23,11 +23,11 @@ function Title({ text1, text2, className = "", alignment = "center" }) {
 
   return (
     <div
-      className={`w-full flex flex-col sm:flex-row gap-2 justify-${alignment} items-${alignment} text-${alignment} ${className} uppercase`}
+      className={`w-full flex flex-col sm:flex-row sm:gap-2 justify-${alignment} items-${alignment} text-${alignment} ${className} uppercase`}
     >
       {/* Animated Text Lines */}
       <motion.p
-        className="text-xl text-gray-500"
+        className="text-[30px] text-gray-500"
         initial="hidden"
         animate="visible"
         custom={0.1} // Delay for animation
@@ -36,7 +36,7 @@ function Title({ text1, text2, className = "", alignment = "center" }) {
         {text1}
       </motion.p>
       <motion.p
-        className="text-xl font-semibold text-gray-700"
+        className="text-[30px] font-semibold text-gray-700"
         initial="hidden"
         animate="visible"
         custom={0.3} // Delay for animation
@@ -45,7 +45,7 @@ function Title({ text1, text2, className = "", alignment = "center" }) {
         {text2}
       </motion.p>
       <motion.div
-        className="w-[30px] border-b-2 border-gray-800 mt-1"
+        className="w-[50px] border-b-2 border-gray-800 mt-1 hidden sm:block"
         initial="hidden"
         animate="visible"
         custom={0.5} // Delay for animation

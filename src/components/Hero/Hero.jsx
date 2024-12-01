@@ -39,39 +39,36 @@ const Hero = () => {
         className="flex-1 border py-[3.5rem] md:py-0 flex justify-center items-center flex-col"
         variants={textVariants}
       >
-        {/* Bestseller Label */}
-        <div className="flex items-center justify-start gap-2 uppercase">
-          <p className="w-[30px] h-0 border border-gray-600 mt-1 flex-1"></p>
-          <p className="text-gray-700 tracking-widest">our bestseller</p>
-        </div>
+        <div className="flex flex-col items-start">
+          {/* Bestseller Label */}
+          {/* <div className="border flex flex-col items-start justify-normal"> */}
+          <div className="flex items-center justify-start gap-2 uppercase font-semibold">
+            <p className="w-[50px] h-0 border border-gray-700  flex-1"></p>
+            <p className="text-gray-700 tracking-widest">our bestseller</p>
+          </div>
 
-        {/* Title Section */}
-        <div className="prata text-4xl xl:text-5xl font-bold flex gap-2 py-4">
-          {/* Each word animated independently */}
-          <motion.p className="text-gray-500" variants={textVariants}>
-            latest
-          </motion.p>
-          <motion.p
-            className="text-gray-700"
-            variants={textVariants}
-            transition={{ delay: 0.2 }} // Slight delay for staggered effect
-          >
-            arrivals
-          </motion.p>
-        </div>
+          {/* Title Section */}
+          <div className="font-[prata_] text-4xl xl:text-5xl py-1 flex gap-2 ">
+            {/* Each word animated independently */}
+            <motion.p className="text-gray-500" variants={textVariants}>
+              Latest
+            </motion.p>
+            <motion.p
+              className="text-gray-700"
+              variants={textVariants}
+              transition={{ delay: 0.2 }} // Slight delay for staggered effect
+            >
+              Arrivals
+            </motion.p>
+          </div>
 
-        {/* Shop Now Call-to-Action */}
-        <motion.div whileHover={{ scale: 1.05 }}>
-          <Link
-            to={"/collections"}
-            className="flex items-center gap-2 uppercase justify-start group"
-          >
-            <p className="cursor-pointer text-gray-700 tracking-wide transition-all duration-300 group-hover:text-gray-900">
-              shop now
-            </p>
-            <p className="w-[30px] h-0 border border-gray-600 mt-1 flex-1"></p>
-          </Link>
-        </motion.div>
+          {/* Shop Now Call-to-Action */}
+
+          <div className="flex items-center justify-start gap-2 uppercase font-semibold">
+            <p className="text-gray-700 tracking-widest">Shop Now</p>
+            <p className="w-[50px] h-0 border border-gray-700  flex-1"></p>
+          </div>
+        </div>
       </motion.div>
 
       {/* Right Section (Hero Image) */}

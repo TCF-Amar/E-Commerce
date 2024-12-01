@@ -16,6 +16,10 @@ function LatestCollections() {
     <div className="mt-4 sm:ml-4 mb-10">
       {/* Section Title */}
       <Title text1="Latest" text2="Collections" />
+      <p className="w-full text-center text-sm text-gray-500">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem
+        dolore voluptate quaerat! Asperiores, mollitia. Consectetur.
+      </p>
 
       {/* Grid Layout for Products */}
       <div className="grid grid-cols-2 gap-3 gap-y-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 mt-6">

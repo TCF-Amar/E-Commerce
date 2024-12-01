@@ -9,7 +9,7 @@ import LargeScreenHeader from "./LargeScreenHeader"; // Header component optimiz
  */
 function Header() {
   return (
-    <div className="w-full fixed shadow-xl z-[10] top-0 left-0">
+    <div className="w-full fixed  z-[10] top-0 left-0">
       {/* SmallScreenHeader: Renders header optimized for small screens (e.g., mobile) */}
       <SmallScreenHeader />
 
