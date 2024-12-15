@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
  * @param {number} price - Price of the product
  * @param {string} currency - Currency symbol for the price
  */
-function Item({ img, name, rating, price, currency }) {
+function Item({ img, name, price, currency }) {
   return (
     <motion.div
       className=" border-gray-300 rounded overflow-hidden "

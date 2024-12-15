@@ -8,6 +8,7 @@ import eyeClosed from "./icons/visibility_off_24dp_5F6368_FILL0_wght400_GRAD0_op
 import exchange from "./icons/partner_exchange_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg";
 import returnCheck from "./icons/verified_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg";
 import support from "./icons/support_agent_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg";
+import notfound from "./icons/priority_high_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg";
 const icons = {
   menu,
   back,
@@ -19,6 +20,7 @@ const icons = {
   exchange,
   returnCheck,
   support,
+  notfound,
 };
 
 export default icons;

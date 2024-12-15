@@ -25,12 +25,12 @@ function LatestCollections() {
       <div className="grid grid-cols-2 gap-3 gap-y-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 mt-6">
         {/* Map through the first 10 products and render them as links */}
         {product.slice(0, 10).map((product) => (
-          <Link key={product.id} to={`/product/${product.id}`}>
+          <Link key={product._id} to={`/product/${product._id}`}>
             {/* Render Item component with product details */}
             <Item
+              
               img={product.images[0]} // Display the first image of the product
               name={product.name} // Display the product name
-              rating={product.ratings.averageRating} // Display the average rating
               price={product.price} // Display the product price
               currency={currency} // Display the currency symbol
               sizes={product.sizes} // Display the available sizes

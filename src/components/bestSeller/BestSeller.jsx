@@ -13,7 +13,7 @@ function BestSeller() {
   const { product, currency } = useContext(ShopContext);
 
   // Filter products to include only those marked as best sellers
-  const bestSellers = product.filter((item) => item.bestSeller === true);
+  const bestSellers = product.filter((item) => item.bestseller === true);
 
   return (
     <div className="mt-4 sm:ml-4 mb-10 ">
@@ -38,7 +38,6 @@ function BestSeller() {
                 <Item
                   img={images[0] || "https://via.placeholder.com/150"} // Fallback image if no image is available
                   name={name} // Product name
-                  rating={ratings?.averageRating || 0} // Default rating is 0 if not provided
                   price={price} // Product price
                   currency={currency} // Currency symbol
                   sizes={sizes} // Available sizes
